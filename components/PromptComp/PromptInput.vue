@@ -26,6 +26,7 @@ const Store = usePromptStore();
 
     <!-- Text Input -->
     <input
+      @keydown.enter="Store.sendPrompt()"
       type="text"
       v-model="Store.message"
       class="flex-1 p-2 border border-gray-300 rounded focus:outline-none"

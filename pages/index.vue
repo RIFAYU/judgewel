@@ -1,10 +1,12 @@
 <script setup>
+import Aboutpage from './aboutpage.vue';
+
 </script>
 
 <template>
   <main class="bg-gray-100">
     <!-- Navigation Bar -->
-    <NavBar />
+    <NavBar class="sticky top-0 z-50" />
 
     <!-- Hero Section -->
     <div
@@ -23,7 +25,6 @@
         <RouterLink to="/promptpage" class="bg-black text-white px-7 py-3 rounded-md">Get Started</RouterLink>
       </div>
     </div>
-
     <!-- Search Bar -->
     <!-- <div class="container mx-auto px-4 py-8">
         <div class="flex justify-center">

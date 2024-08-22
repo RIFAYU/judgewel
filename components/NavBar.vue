@@ -2,7 +2,7 @@
   <div>
     <nav class="bg-white shadow-md">
       <div
-        class="container mx-auto px-4 py-4 flex justify-between items-center"
+        class="container mx-auto py-4 flex justify-between items-center"
       >
         <div class="flex items-center">
           <img
@@ -14,21 +14,21 @@
             <li>
               <RouterLink
                 to="/"
-                class="text-black-700 hover:text-black-900 px-5 py-2 font-semibold"
+                class="text-black-700 hover:text-black-900 px-5 py-2 font-normal hover:font-semibold"
                 >HOME</RouterLink
               >
             </li>
             <li>
               <RouterLink
-                to="/about"
-                class="text-black-700 hover:text-black-900 px-5 py-2 font-semibold"
+                to="/aboutpage"
+                class="text-black-700 hover:text-black-900 px-5 py-2 font-normal hover:font-semibold"
                 >ABOUT US</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 to="/contact"
-                class="text-black-700 hover:text-black-900 px-5 py-2 font-semibold"
+                class="text-black-700 hover:text-black-900 px-5 py-2 font-normal hover:font-semibold"
                 >CONTACT</RouterLink
               >
             </li>
