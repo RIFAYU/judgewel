@@ -9,9 +9,11 @@
                 <MsgLoader v-if="Store.Oload" class="float-left mt-[32px] ml-2"/>
             </div>
         </div>
-        <PromptCompPromptSugg class="mt-[20px]"/>
     </div>
   </div>
+  <section class="p-4">
+    <PromptCompPromptSugg />
+  </section>
 </template>
 
 <script setup>

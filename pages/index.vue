@@ -20,7 +20,7 @@
           Ethics is knowing the difference between what you have a right to do
           and what is right to do.....
         </p>
-        <RouterLink to="/auth/signup" class="bg-black text-white px-7 py-3 rounded-md">Get Started</RouterLink>
+        <RouterLink to="/promptpage" class="bg-black text-white px-7 py-3 rounded-md">Get Started</RouterLink>
       </div>
     </div>
 
