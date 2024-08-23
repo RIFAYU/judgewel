@@ -13,7 +13,7 @@ import { auth } from "@/server/firebaseConfig";
           class="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
+            src="/public/icons/bot_profile.jpeg"
             class="h-8"
             alt="Flowbite Logo"
           />
@@ -36,11 +36,11 @@ import { auth } from "@/server/firebaseConfig";
             <span class="sr-only">Open user menu</span>
             <img
               class="w-8 h-8 rounded-full"
-              src="/public/icons/defaulr_profile_image.jpg"
+              src="/public/icons/profile_avatar.png"
               alt="user photo"
             />
           </button>
-         
+         <SignOut />
         </div>
       </div>
     </nav>

@@ -1,6 +1,21 @@
 <script setup>
-import Aboutpage from './aboutpage.vue';
+import { ref, onMounted } from 'vue';
 
+const typedText = ref('');
+const fullText = 'We Hold the Quality Standard!';
+let index = 0;
+
+onMounted(() => {
+  typeWriter();
+});
+
+function typeWriter() {
+  if (index < fullText.length) {
+    typedText.value += fullText.charAt(index);
+    index++;
+    setTimeout(typeWriter, 100); // Adjust typing speed here
+  }
+}
 </script>
 
 <template>
@@ -17,7 +32,7 @@ import Aboutpage from './aboutpage.vue';
     >
       <div class="absolute inset-0 bg-black opacity-50"></div>
       <div class="relative z-10 text-center text-white px-4">
-        <h1 class="text-4xl font-bold mb-4">We Hold the Quality Standard!</h1>
+        <h1 class="text-4xl font-bold mb-4">{{ typedText }}</h1>
         <p class="mb-6">
           Ethics is knowing the difference between what you have a right to do
           and what is right to do.....

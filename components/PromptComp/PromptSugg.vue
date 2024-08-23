@@ -11,7 +11,7 @@ const Suggestion = ref([
 ]);
 
 const sugg_click = (Suggestion) => {
-  promptStore.message = Suggestion;
+  promptStore.Newmessage = Suggestion;
   hide_suggestion.value = false;
 };
 </script>
@@ -20,7 +20,7 @@ const sugg_click = (Suggestion) => {
     <main v-if="hide_suggestion" class="flex flex-nowrap md:grid md:grid-cols-4 gap-4 overflow-x-auto">
       <div @click="sugg_click(Suggestion)"
         v-for="Suggestion in Suggestion"
-        class="bg-gray-200 text-black p-2 rounded-lg flex-shrink-0 w-64 md:w-auto cursor-pointer"
+        class="bg-gray-200 text-black rounded-lg flex-shrink-0 p-2 md:w-auto cursor-pointer text-center"
       >
         <b>{{ Suggestion }}</b>
       </div>

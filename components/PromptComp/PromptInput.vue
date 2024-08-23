@@ -26,17 +26,19 @@ const Store = usePromptStore();
 
     <!-- Text Input -->
     <input
+      :disabled="Store.Oload"
       @keydown.enter="Store.sendPrompt()"
       type="text"
-      v-model="Store.message"
+      v-model="Store.Newmessage"
       class="flex-1 p-2 border border-gray-300 rounded focus:outline-none"
       placeholder="Type your message..."
       value=""
     />
 
     <!-- Send Button -->
-    <button @click="Store.sendPrompt()" class="ml-2 p-2 bg-blue-500 hover:bg-blue-600 text-white rounded">
-      Send
+    <button :disabled="Store.Oload"  @click="Store.sendPrompt(),Store.How_Used += 1" class="ml-2 p-2 bg-blue-500 hover:bg-blue-600 text-white rounded">
+      <img v-if="Store.Oload" src='/public/icons/run_btn.png' alt="" class="w-6 h-6">
+      <img v-if="!Store.Oload"src='/public/icons/sent_btn.png' alt="" class="w-6 h-6">
     </button>
   </div>
 </template>

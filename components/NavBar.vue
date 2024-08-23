@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <nav class="bg-white shadow-md">
+  <div class="shadow-2xl">
+    <nav class="bg-gray-200 shadow-lg">
       <div
         class="container mx-auto py-4 flex justify-between items-center"
       >
@@ -27,7 +27,7 @@
             </li>
             <li>
               <RouterLink
-                to="/contact"
+                to=""
                 class="text-black-700 hover:text-black-900 px-5 py-2 font-normal hover:font-semibold"
                 >CONTACT</RouterLink
               >
